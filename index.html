@@ -1,30 +1,37 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <title>My Material UI Web Page</title>
-
-    <!-- Add Material UI stylesheet -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Material-UI Website</title>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet"
-          href="https://unpkg.com/@material-ui/core@latest/umd/material-ui.development.css" />
+          href="https://unpkg.com/material-ui@4.7.0/dist/css/material-ui.min.css" />
 </head>
-
 <body>
-    <h1>My Material UI Web Page</h1>
-
-    <p>
-        This is a simple responsive standalone HTML web page built with Material
-        UI.
-    </p>
-
-    <!-- Add Material UI JavaScript library -->
-    <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.development.js"></script>
+    <div>
+        <AppBar position="static">
+            <Toolbar>
+                <Typography variant="h6" color="inherit">
+                    My Website
+                </Typography>
+                <div style={{ marginLeft: "auto" }}>
+                    <Button color="inherit">Home</Button>
+                    <Button color="inherit">News</Button>
+                    <Button color="inherit">OpenAI Info</Button>
+                </div>
+            </Toolbar>
+        </AppBar>
+    </div>
+    <div style={{ padding: 24 }}>
+        <Typography variant="h4">Welcome to my website!</Typography>
+        <Typography variant="body1">
+            This is a basic HTML page built with Material-UI.
+        </Typography>
+    </div>
+    <script src="https://unpkg.com/material-ui@4.7.0/dist/material-ui.min.js"></script>
 </body>
 </html>
