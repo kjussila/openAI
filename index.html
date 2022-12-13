@@ -16,8 +16,25 @@
             margin: 0 auto;
         }
     </style>
+    <script type="text/javascript" src="https://unpkg.com/material-ui/core/umd/material-ui.production.min.js"></script>
 </head>
 <body>
+    <div id="root">
+        <ul>
+            <li>
+                <i class="material-icons">menu</i>
+                <ul>
+                    <a href="#section1">
+                    <li>Menu Item 1</li></a>
+                    <a href="#section2">
+                    <li>Menu Item 2</li></a>
+                    <a href="#section3">
+                    <li>Menu Item 3</li></a>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <div class="container">
         <h1>My Material-UI Web Page</h1>
         <p>
@@ -29,5 +46,17 @@
             star
         </button>
     </div>
+    <div id="section1">
+        ...content for section 1...
+    </div>
+
+    <div id="section2">
+        ...content for section 2...
+    </div>
+
+    <div id="section3">
+        ...content for section 3...
+    </div>
+
 </body>
 </html>
